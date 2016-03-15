@@ -1,7 +1,29 @@
 <html>
 <body>
+  <!--
 <script>
-window.open("http://www.google.com");
+function newPopup(url, windowName) {
+    window.open(url,windowName,'height=768,width=1366,left=10,top=10,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no');
+}
+function loadDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (xhttp.readyState == 4 && xhttp.status == 200) {
+      document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+  };
+  xhttp.open("GET", "http://192.168.1.4:8000/ajax.py", true);
+  xhttp.send();
+}
+newPopup('http://www.google.com','pop');
+<a href="http://w"
+</script>
+-->
+<script>
+  function newPopup(url, windowName) {
+    window.open(url,windowName,'height=768,width=1366,left=10,top=10,titlebar=no,toolbar=no,menubar=no,location=no,directories=no,status=no');
+}
+newPopup('http://www.google.com','123')
 </script>
 </body>
 </html>
