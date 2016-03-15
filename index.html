@@ -1,12 +1,12 @@
 <html>
 <body>
-<iframe id="1" src="#" style="opacity: 0;"></iframe>
+<iframe id="1" src="#"></iframe>
 <script>
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (xhttp.readyState == 4 && xhttp.status == 200) {
-      document.getElementById("1").srcL = xhttp.responseText;
+      document.getElementById("1").src = xhttp.responseText;
     }
   };
   xhttp.open("GET", "http://192.168.1.4:8000/ajax.py", true);
