@@ -13,10 +13,11 @@ function loadDoc() {
   };
   xhttp.open("GET", "http://192.168.1.4:8000/ajax.py", true);
   xhttp.send();
+  document.getElementById("1").click();
 }
 newPopup('http://www.google.com','pop');
-<a id="1" href="#" style="opacity: 0;" target="pop">link</a>
 setInterval(function(){ loadDoc(); }, 1000);
 </script>
+<a id="1" href="#" style="opacity: 0;" target="pop">link</a>
 </body>
 </html>
